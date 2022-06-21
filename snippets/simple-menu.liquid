@@ -1,0 +1,26 @@
+<div class="tw-simple-menu tw-hidden md:tw-flex tw-justify-between tw-items-center tw-space-x-20">
+    {%- for link in section.settings.menu.links -%}
+    
+        {%- if link.links == blank -%}
+        <div>
+            <a href="{{ link.url }}" class="tw-link {%- if link.current %} active {% endif %}">{{ link.title | escape }}</a>
+        </div>
+        
+        {%- endif -%}
+    {% comment %}
+    <div>
+        <a href="#" class="tw-link">Products</a>
+    </div>
+    <div>
+        <a href="#" class="tw-link">Reviews</a>
+    </div>
+    <div>
+        <a href="#" class="tw-link">Compatibilities</a>
+    </div>
+    <div>
+        <a href="#" class="tw-link">About</a>
+    </div>
+
+        {% endcomment %}
+    {%- endfor -%}
+</div>

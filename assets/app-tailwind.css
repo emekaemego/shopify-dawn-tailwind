@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.tw-simple-menu {
+  @apply tw-uppercase tw-font-semibold;
+}
+
+.tw-link {
+  @apply hover:tw-underline tw-p-4 tw-rounded-xl;
+}
+
+.tw-link.active {
+  @apply tw-bg-green-100 tw-no-underline;
+}
+
+.tw-hero-divider {
+  @apply tw-border-l tw-border-gray-400 tw-opacity-50 tw-h-16;
+}
+
+.tw-wrapper {
+  @apply tw-px-5 md:tw-px-14 /* tw-max-w-screen-xl */ tw-mx-auto;
+}
