@@ -1,0 +1,183 @@
+      <!-- Begin section -->
+      <section class="tw-bg-gray-100 tw-pt-8 md:tw-pt-10">
+        <div class="tw-wrapper">
+          <div
+            class="tw-flex tw-flex-col-reverse md:tw-flex-row tw-justify-center md:tw-justify-between tw-items-center tw-space-x-0 md:tw-space-x-14"
+          >
+            <!-- flex item md:w-1/2 -->
+            <div class="tw-w-full tw-pt-5 md:tw-pt-0 tw-text-center md:tw-text-left">
+              <h2
+                class="tw-text-2xl md:tw-text-6xl tw-uppercase tw-tracking-tight tw-leading-tight tw-font-bold tw-text-black tw-pb-4 md:tw-pb-6"
+              >
+              {{ section.settings.heading }}
+              </h2>
+
+              <h3 class="tw-font-bold tw-text-sm md:tw-text-2xl tw-mb-6 tw-text-yellow-500">
+                {{ section.settings.subtitle }}
+              </h3>
+
+              <p
+                class="tw-px-0 tw-mb-2 md:tw-text-base tw-leading-normal md:last:tw-leading-7 tw-text-gray-600"
+              >
+                {{ section.settings.description }}
+              </p>
+            </div>
+            <!-- flex item end -->
+
+          </div>
+
+         <!-- <div
+            class="flex flex-col md:flex-row justify-between items-center space-x-0 md:space-x-24 pt-8"
+          >
+            <p class="uppercase whitespace-nowrap text-gray-600">
+              <span>Our Clients</span>
+            </p>
+            <div class="w-full md:w-4/5">
+              <div
+                class="swiffy-slider slider-nav-autoplay slider-nav-dark slider-nav-outside-expand slider-item-show5 slider-item-snapstart slider-nav-autopause slider-nav-outside slider-nav-dark slider-nav-sm slider-nav-page pt-8 pb-6"
+                data-slider-nav-autoplay-interval="3000"
+              >
+                <div class="slider-container">
+                  <div class="client-logo-content">
+                    <img
+                      src="/img/clients/uba.png"
+                      class="w-40 md: w-32"
+                      loading="lazy"
+                      alt="Primark"
+                    />
+                  </div>
+                  <div class="client-logo-content">
+                    <img
+                      src="/img/clients/Primark-2.png"
+                      class="w-40"
+                      loading="lazy"
+                      alt="Primark"
+                    />
+                  </div>
+                  <div class="client-logo-content">
+                    <img
+                      src="/img/clients/cubana.png"
+                      class="w-48 md:w-28 rounded-lg"
+                      loading="lazy"
+                      alt="Odogwu"
+                    />
+                  </div>
+
+                  <div class="client-logo-content">
+                    <img
+                      src="/img/clients/thekiek-2.png"
+                      class="w-48 md:w-24 rounded-lg"
+                      loading="lazy"
+                      alt="the kiek"
+                    />
+                  </div>
+
+                  <div class="client-logo-content">
+                    <img
+                      src="/img/clients/vintage-2.png"
+                      class="w-48 md:w-20 rounded-lg"
+                      loading="lazy"
+                      alt="vintage"
+                    />
+                  </div>
+                  <div class="client-logo-content">
+                    <img
+                      src="/img/clients/spac-nation-2.png"
+                      class="w-48 md:w-24 rounded-lg"
+                      loading="lazy"
+                      alt="Spac nation"
+                    />
+                  </div>
+                  <div class="client-logo-content">
+                    <img
+                      src="/img/clients/Bitcoin.png"
+                      class="w-48 md:w-32 rounded-lg"
+                      loading="lazy"
+                      alt="Bitcoin"
+                    />
+                  </div>
+                  <div class="client-logo-content">
+                    <img
+                      src="/img/clients/Conishe.png"
+                      class="w-48 md:w-32 rounded-lg"
+                      loading="lazy"
+                      alt="corniche hotel"
+                    />
+                  </div>
+                  <div class="client-logo-content">
+                    <img
+                      src="/img/clients/Sky-logo.png"
+                      class="w-48 md:w-20 rounded-lg"
+                      loading="lazy"
+                      alt="sky"
+                    />
+                  </div>
+                </div>
+
+                <button
+                  type="button"
+                  class="slider-nav"
+                  aria-label="Go left"
+                ></button>
+                <button
+                  type="button"
+                  class="slider-nav slider-nav-next"
+                  aria-label="Go left"
+                ></button>
+              </div>
+            </div>
+          </div> -->
+          
+        </div>
+      </section>
+      <!-- End section -->
+
+{% schema %}
+    { 
+        "name": "Teaser",
+        "max_blocks": 10,
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "default": "Teaser heading",
+                "label": "Heading"
+            },
+            {
+                "type": "text",
+                "id": "subtitle",
+                "default": "Teaser subtitle",
+                "label": "Subtitle"
+            },
+            {
+                "type": "textarea",
+                "id": "description",
+                "default": "Teaser description",
+                "label": "Description"
+            }
+        ],
+        "blocks":[
+          {
+            "type": "client_image",
+            "name": "Client",
+            "settings": [
+              {
+                "id": "promo_image",
+                "type": "image_picker",
+                "label": "Promo image"
+              },
+              {
+                  "type": "text",
+                  "id": "alt",
+                  "default": "Client name",
+                  "label": "Client Name"
+              }
+            ]
+          }
+        ],
+        "presets": [{
+            "name": "Teaser and Client Logo",
+            "category": "Text"
+        }]
+    } 
+{% endschema %}
