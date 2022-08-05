@@ -1,4 +1,13 @@
-      <!-- Begin section -->
+<script
+src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider.min.js"
+defer
+></script>
+<link
+href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/css/swiffy-slider.min.css"
+rel="stylesheet"
+/>
+
+     <!-- Begin section -->
       <section class="tw-bg-gray-100 tw-pt-8 md:tw-pt-10">
         <div class="tw-wrapper">
           <div
@@ -12,12 +21,12 @@
               {{ section.settings.heading }}
               </h2>
 
-              <h3 class="tw-font-bold tw-text-sm md:tw-text-2xl tw-mb-6 tw-text-yellow-500">
+              <h2 class="tw-font-bold tw-pb-8 tw-text-yellow-500">
                 {{ section.settings.subtitle }}
-              </h3>
+              </h2>
 
               <p
-                class="tw-px-0 tw-mb-2 md:tw-text-base tw-leading-normal md:last:tw-leading-7 tw-text-gray-600"
+                class="tw-px-0 tw-mb-6 tw-pt-8 tw-leading-normal md:last:tw-leading-7 tw-text-gray-600"
               >
                 {{ section.settings.description }}
               </p>
@@ -25,6 +34,53 @@
             <!-- flex item end -->
 
           </div>
+
+        <div
+            class="tw-flex tw-flex-col md:tw-flex-row tw-justify-between tw-items-center tw-space-x-0 md:tw-space-x-24 tw-pt-8"
+          >
+            <p class="tw-uppercase tw-whitespace-nowrap tw-text-gray-600">
+              <span>Our Clients</span>
+            </p>
+            <div class="tw-w-full md:tw-w-4/5">
+              <div
+                class="swiffy-slider slider-nav-autoplay slider-nav-dark slider-nav-outside-expand slider-item-show5 slider-item-snapstart slider-nav-autopause slider-nav-outside slider-nav-dark slider-nav-sm slider-nav-page tw-pt-8 tw-pb-6"
+                data-slider-nav-autoplay-interval="3000"
+              >
+                <div class="slider-container">
+
+                  {% for  block in section.blocks %}
+                    
+                  <div class="tw-client-logo-content">
+                    <!-- {{ block.settings.promo_image }} -->
+                    <img
+                      src="{{ block.settings.promo_image | image_url: width: 100 }}"
+                      loading="lazy"
+                      alt="{{ block.settings.alt }}"
+                    />
+                  </div>
+
+                  
+                  {% endfor %}
+                </div>
+
+                <button
+                  type="button"
+                  class="slider-nav"
+                  aria-label="Go left"
+                ></button>
+                <button
+                  type="button"
+                  class="slider-nav slider-nav-next"
+                  aria-label="Go left"
+                ></button>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
 
          <!-- <div
             class="flex flex-col md:flex-row justify-between items-center space-x-0 md:space-x-24 pt-8"

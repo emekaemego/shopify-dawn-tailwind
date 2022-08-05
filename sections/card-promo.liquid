@@ -1,0 +1,41 @@
+<section class="bg-white tw-py-8 md:tw-py-28">
+    <div class="tw-wrapper">
+      <!-- section header -->
+      <div class="tw-text-center tw-pb-18 md:tw-pb-30">
+        <h2 class="tw-h2 tw-font-bold tw-uppercase tw-pb-4 md:tw-pb-12">
+            {{ section.settings.heading }}
+        </h2>
+
+        <div class="tw-mx-auto">
+          <h4 class="tw-h3 tw-text-center tw-text-yellow-500 tw-font-semibold">
+            {{ section.settings.subtitle }}
+          </h4>
+        </div>
+      </div>
+      <!-- end section header -->
+    </div>
+  </section>
+
+  {% schema %}
+{ 
+    "name": "Card Promo",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "default": "ONLY ONE BUSINESS CARD",
+            "label": "Heading"
+        },
+        {
+            "type": "text",
+            "id": "subtitle",
+            "default": "B1TE piloting business cards in the future.",
+            "label": "Subtitle"
+        }
+    ],
+    "presets": [{
+        "name": "Card Promo",
+        "category": "Text"
+      }]
+} 
+{% endschema %}
