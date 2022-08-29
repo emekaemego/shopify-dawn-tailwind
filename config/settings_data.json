@@ -106,8 +106,8 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo": "shopify:\/\/shop_images\/b1te-logo.png",
-          "logo_width": 90,
+          "logo": "shopify:\/\/shop_images\/b1te.png",
+          "logo_width": 50,
           "logo_position": "middle-left",
           "menu": "main-menu",
           "menu_type_desktop": "dropdown",
@@ -122,41 +122,44 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
               "menu": "footer"
             }
           },
           "footer-1": {
             "type": "link_list",
             "settings": {
-              "heading": "Info",
-              "menu": "footer"
+              "menu": "footer-menu-2"
+            }
+          },
+          "9f4bdead-4927-4b49-ae5b-065b166264c6": {
+            "type": "link_list",
+            "settings": {
+              "menu": "footer-menu-3"
             }
           },
           "footer-2": {
             "type": "text",
             "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "heading": "Copyright 2021. All rights reserved.",
+              "email": "hi@b1te.co"
+            }
+          },
+          "1ba7f326-5159-4731-b04a-4f3aad19fcfb": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/b1te-white.png",
+              "image_width": 50
             }
           }
         },
         "block_order": [
           "footer-0",
           "footer-1",
-          "footer-2"
+          "9f4bdead-4927-4b49-ae5b-065b166264c6",
+          "footer-2",
+          "1ba7f326-5159-4731-b04a-4f3aad19fcfb"
         ],
         "settings": {
-          "color_scheme": "background-1",
-          "newsletter_enable": true,
-          "newsletter_heading": "Subscribe to our emails",
-          "show_social": true,
-          "enable_country_selector": false,
-          "enable_language_selector": false,
-          "payment_enable": true,
-          "margin_top": 48,
-          "padding_top": 36,
-          "padding_bottom": 36
         }
       },
       "main-password-header": {
@@ -283,9 +286,9 @@
               "type": "announcement",
               "settings": {
                 "text": "Welcome to our store",
-                "link": "",
                 "text_color": "#ffffff",
-                "bg_color": "#000000"
+                "bg_color": "#000000",
+                "link": ""
               }
             }
           },
@@ -313,22 +316,19 @@
             "footer-0": {
               "type": "link_list",
               "settings": {
-                "heading": "Quick links",
                 "menu": "footer"
               }
             },
             "footer-1": {
               "type": "link_list",
               "settings": {
-                "heading": "Info",
                 "menu": "footer"
               }
             },
             "footer-2": {
               "type": "text",
               "settings": {
-                "heading": "Our mission",
-                "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+                "heading": "Our mission"
               }
             }
           },
@@ -338,16 +338,6 @@
             "footer-2"
           ],
           "settings": {
-            "color_scheme": "background-1",
-            "newsletter_enable": true,
-            "newsletter_heading": "Subscribe to our emails",
-            "show_social": true,
-            "enable_country_selector": false,
-            "enable_language_selector": false,
-            "payment_enable": true,
-            "margin_top": 48,
-            "padding_top": 36,
-            "padding_bottom": 36
           }
         },
         "main-password-header": {

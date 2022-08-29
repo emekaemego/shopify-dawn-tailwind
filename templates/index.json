@@ -1,153 +1,8 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "show_view_all": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "multicolumn": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "column1": {
           "type": "column",
@@ -198,14 +53,198 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1661048440537b6e69": {
+      "type": "hero",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/HAND-GIF.gif",
+        "heading": "JUST ONE BUSINESS CARD FOR ALL",
+        "subtitle": "Share your info with just a tap!",
+        "description": "B1TE business cards are digital, with NFC technology that allows you to transfer your contact information, socials, and so much more to any smartphone with just a tap, no app needed."
+      }
+    },
+    "1661048568cf6249c0": {
+      "type": "teaser-clients",
+      "blocks": {
+        "90059897-b485-478f-a15e-c48fdff1d4ab": {
+          "type": "client_image",
+          "settings": {
+            "promo_image": "shopify:\/\/shop_images\/spac-nation-2.png",
+            "alt": "Client name"
+          }
+        },
+        "c7d60774-fb5d-4024-ae58-b6752afab93d": {
+          "type": "client_image",
+          "settings": {
+            "promo_image": "shopify:\/\/shop_images\/Sky-logo.png",
+            "alt": "Client name"
+          }
+        },
+        "f8818fc1-7af6-4c39-a4e4-8e3168c1b7af": {
+          "type": "client_image",
+          "settings": {
+            "promo_image": "shopify:\/\/shop_images\/thekiek-2.png",
+            "alt": "Client name"
+          }
+        },
+        "a3fec408-0ba0-417f-889b-7b96e9982760": {
+          "type": "client_image",
+          "settings": {
+            "promo_image": "shopify:\/\/shop_images\/cubana.png",
+            "alt": "Client name"
+          }
+        },
+        "8b713642-04c7-4aaa-88df-68d58c6befd8": {
+          "type": "client_image",
+          "settings": {
+            "promo_image": "shopify:\/\/shop_images\/Conishe.png",
+            "alt": "Client name"
+          }
+        },
+        "3b9e4fd1-2981-48f9-a058-d1c989051642": {
+          "type": "client_image",
+          "settings": {
+            "promo_image": "shopify:\/\/shop_images\/Primark-2.png",
+            "alt": "Client name"
+          }
+        },
+        "7f0017fe-bad2-4259-99a4-ca51626f0c6e": {
+          "type": "client_image",
+          "settings": {
+            "promo_image": "shopify:\/\/shop_images\/uba.png",
+            "alt": "Client name"
+          }
+        },
+        "d1968b4e-f7b1-44f6-8eab-1c7a35efeb65": {
+          "type": "client_image",
+          "settings": {
+            "promo_image": "shopify:\/\/shop_images\/cap-red.png",
+            "alt": "Client name"
+          }
+        },
+        "d32e7fd6-5d5f-4f45-b623-5cf6920ee912": {
+          "type": "client_image",
+          "settings": {
+            "promo_image": "shopify:\/\/shop_images\/Bitcoin.png",
+            "alt": "Client name"
+          }
+        }
+      },
+      "block_order": [
+        "90059897-b485-478f-a15e-c48fdff1d4ab",
+        "c7d60774-fb5d-4024-ae58-b6752afab93d",
+        "f8818fc1-7af6-4c39-a4e4-8e3168c1b7af",
+        "a3fec408-0ba0-417f-889b-7b96e9982760",
+        "8b713642-04c7-4aaa-88df-68d58c6befd8",
+        "3b9e4fd1-2981-48f9-a058-d1c989051642",
+        "7f0017fe-bad2-4259-99a4-ca51626f0c6e",
+        "d1968b4e-f7b1-44f6-8eab-1c7a35efeb65",
+        "d32e7fd6-5d5f-4f45-b623-5cf6920ee912"
+      ],
+      "settings": {
+        "heading": "FIND MORE ABOUT B1TE NFC BUSINESS CARD",
+        "subtitle": "Instantly transfer any information.",
+        "description": "Using NFC technology, the B1TE card can share all of your information when tapped against a smartphone. No more messing around with old paper business cards, put all the information right where people spend most of their time - their phone!"
+      }
+    },
+    "16610486932e4bfef5": {
+      "type": "custom-featured-collection",
+      "blocks": {
+        "40f0f4a5-b299-419b-beae-0954262f79f6": {
+          "type": "card_collection",
+          "settings": {
+            "collection": "metal"
+          }
+        },
+        "42f68367-e58d-4e3e-ac69-df609d1688dc": {
+          "type": "card_collection",
+          "settings": {
+            "collection": "bamboo"
+          }
+        },
+        "43131196-0c13-43a6-8aa5-2a0ac2f0bc19": {
+          "type": "card_collection",
+          "settings": {
+            "collection": "plastic"
+          }
+        },
+        "2d821498-6676-46c1-af8d-06639fecf920": {
+          "type": "card_collection",
+          "settings": {
+            "collection": "tag"
+          }
+        }
+      },
+      "block_order": [
+        "40f0f4a5-b299-419b-beae-0954262f79f6",
+        "42f68367-e58d-4e3e-ac69-df609d1688dc",
+        "43131196-0c13-43a6-8aa5-2a0ac2f0bc19",
+        "2d821498-6676-46c1-af8d-06639fecf920"
+      ],
+      "settings": {
+        "heading": "GET A B1TE",
+        "subtitle": "Get started by choosing your base material type"
+      }
+    },
+    "166104877523489af0": {
+      "type": "own-steps",
+      "blocks": {
+        "89ab01d1-59e0-4ca8-a4a7-92f4a03a03c1": {
+          "type": "step",
+          "settings": {
+            "step_image": "shopify:\/\/shop_images\/lpg-stepIcon1.webp-2.png",
+            "description": "Purchase Your Card"
+          }
+        },
+        "da94dab2-1f3c-4f6f-bbe6-17fe78a3657c": {
+          "type": "step",
+          "settings": {
+            "step_image": "shopify:\/\/shop_images\/lpg-stepIcon2_webp.png",
+            "description": "Create Your Profile"
+          }
+        },
+        "52b717d1-48a0-4fb5-a9a3-4f9337fc15fb": {
+          "type": "step",
+          "settings": {
+            "step_image": "shopify:\/\/shop_images\/lpg-stepIcon3_webp.png",
+            "description": "Tap, Share & Go"
+          }
+        }
+      },
+      "block_order": [
+        "89ab01d1-59e0-4ca8-a4a7-92f4a03a03c1",
+        "da94dab2-1f3c-4f6f-bbe6-17fe78a3657c",
+        "52b717d1-48a0-4fb5-a9a3-4f9337fc15fb"
+      ],
+      "settings": {
+        "heading": "OWN THE FUTURE",
+        "subtitle": "Go contactless in three simple steps!"
+      }
+    },
+    "1661048880ffb51bae": {
+      "type": "card-promo",
+      "settings": {
+        "heading": "ONLY ONE BUSINESS CARD",
+        "subtitle": "B1TE piloting business cards in the future."
+      }
+    },
+    "1661048904eda218db": {
+      "type": "how-to-share",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Phone_wit_profile_new.png",
+        "heading": "SHARE BOTH WAYS",
+        "subtitle": "Compatible with all phone and nfc devices.<br>No app required.",
+        "description": "Simply tap or scan your card using any smartphone, with no app or installation required. It’s really that simple!"
+      }
     }
   },
   "order": [
-    "image_banner",
-    "rich_text",
-    "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "multicolumn",
+    "1661048440537b6e69",
+    "1661048568cf6249c0",
+    "16610486932e4bfef5",
+    "166104877523489af0",
+    "1661048880ffb51bae",
+    "1661048904eda218db"
   ]
 }
