@@ -16,21 +16,26 @@
           >
 
           {% comment %}
-          tw-grid tw-grid-cols-1 md:tw-grid-cols-4 tw-gap-0 md:tw-gap-6 tw-mt-0 md:tw-mt-12
-           {% endcomment %}
+            tw-grid tw-grid-cols-1 md:tw-grid-cols-4 tw-gap-0 md:tw-gap-6 tw-mt-0 md:tw-mt-12
+          {% endcomment %}
 
           {%- for block in section.blocks -%}
 
           {% assign collection = block.settings.collection %}
-          {% assign product = collection.products | sort_natural: product.price_min | first %}
+          {% assign product = collection.products | sort: 'price' | first %}
+
+          {% comment %} {%- for p in collection.products -%}
+            {{ p.price_min }}
+          {%- endfor -%} {% endcomment %}
 
             <!-- grid item start -->
             <div class="tw-text-center">
-                <a href="{{ collection.url  }}" class="">
+                <a href="{{ collection.url }}">
                 <img
                   src="{{ collection.image | image_url }}"
                   class="tw-mx-auto tw-rounded-lg"
                   alt="{{ collection.title }}"
+                  loading="lazy"
                 />
                 </a>
                 <h3 class="tw-pt-14 tw-pb-3 tw-text-5xl tw-font-semibold">
@@ -38,14 +43,14 @@
                 </h3>
   
                 <p class="tw-pb-8 tw-text-gray-800 tw-leading-tight md:tw-leading-normal tw-text-xl md:tw-text-2xl">
-                    {{ collection.description  }}
+                    {{ collection.description }}
                 </p>
 
                 <div class="tw-cta-underline tw-mx-auto">
-                  <a href="{{ collection.url  }}" class="tw-flex
+                  <a href="{{ collection.url }}" class="tw-flex
                   tw-items-center
                   tw-space-x-3 tw-text-2xl">
-                      <span>FROM {{ product.price_min | money }}</span>
+                      <span>FROM {{ product.price | money }}</span>
   
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +69,7 @@
                 </div>
   
                 <div class="tw-px-2 tw-py-12 tw-group">
-                  <a href="{{ collection.url  }}" class="tw-card-type-cta tw-text-xl">See Details</a>
+                  <a href="{{ collection.url }}" class="tw-card-type-cta tw-text-xl">See Details</a>
                 </div>
               </div>
               <!-- grid item end -->
